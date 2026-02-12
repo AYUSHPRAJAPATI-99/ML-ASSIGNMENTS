@@ -9,86 +9,177 @@ Rahul Yadav 317 <br>
 
 # Ecommerce Sales Revenue Prediction 
 
+# Linear Regression Models Analysis
+
 ## Objective
-The objective of this assignment is to perform an end-to-end analysis of an ecommerce sales dataset and apply Linear Regression models to study the relationship between product quantity and sales.
+The objective of this assignment is to implement, analyze, and compare different Linear Regression models using a dataset containing multiple input features and a continuous target variable.
 
-This project is intended as a baseline regression analysis with emphasis on model understanding, interpretation, and evaluation.
+This study focuses on understanding regression techniques, model interpretation, and performance evaluation.
 
+Models implemented:
+1. Simple Linear Regression
+2. Multiple Linear Regression
+3. Polynomial Regression
+4. Regularization Ridge and Lasso
 ---
 
 ## Dataset Description
-- Dataset: ecommerce_sales_data.csv  
-- Domain: Ecommerce / Retail Analytics  
-- Type: Transaction-level data  
+[A](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/ecommerce_sales_data.csv)
+- Dataset used for regression analysis
+- Contains multiple input features
+- Continuous target variable
+- Used for predicting numerical outcomes
 
-### Key Columns
-- Quantity – Number of units sold per order (Independent Variable)  
-- Sales – Total revenue generated from the order (Target Variable)  
-
-Other columns such as Product, Category, Region, and Order Date were explored during exploratory data analysis but were not included in the simple linear regression model.
+The dataset was explored and cleaned before model development.
 
 ---
 
-## Tools and Technologies
-- Python  
-- Jupyter Notebook / Google Colab  
-- Pandas, NumPy  
-- Matplotlib, Seaborn  
-- Scikit-learn  
+## Tools and Technologies Used
+- Python
+- Jupyter Notebook / Google Colab
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
 ---
 
 ## Methodology
-
-### 1. Exploratory Data Analysis (EDA)
-The following steps were performed to understand and prepare the data:
+[A](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/EDA_Simple_PolynomialRegression.ipynb)
+### Part A – Exploratory Data Analysis (EDA)
+The following steps were performed:
 - Dataset loading and inspection
 - Summary statistics generation
-- Missing value and duplicate row checks
-- Outlier detection using boxplots
-- Data visualization and correlation analysis
+- Missing value checking
+- Outlier detection
+- Feature distribution visualization
+- Correlation analysis using heatmap
 
-### 2. Feature Selection
-To satisfy the definition of Simple Linear Regression, only one independent variable was selected:
-- Quantity → Sales
-
-### 3. Model Building
-- The dataset was split into training (80%) and testing (20%) sets
-- A Simple Linear Regression model was trained using `LinearRegression` from scikit-learn
+EDA helps understand relationships and data quality before modeling.
 
 ---
 
-## Model Evaluation
-The model performance was evaluated using standard regression metrics:
+## Part B – Simple Linear Regression
+[A](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/EDA_Simple_PolynomialRegression.ipynb)
+A single independent feature is used to predict the target variable.
 
-- Mean Squared Error (MSE): 3,373,973.04  
-- Root Mean Squared Error (RMSE): 1836.84  
-- R² Score: 0.46  
+Steps performed:
+- Feature selection
+- Train-test split
+- Model training
+- Regression line plotting
+- Interpretation of slope and intercept
 
-## Interpretation
-- An R² score of 0.46 indicates that approximately 46% of the variance in sales is explained by quantity.
-- The RMSE value represents the average prediction error in sales.
-- These results suggest a moderate linear relationship between quantity and sales.
+### Evaluation Results
+- MSE: **3,212,598.77**
+- RMSE: **1,792.37**
+- R² Score: **0.4335**
 
-Since only one feature was used, the model serves as a baseline for understanding sales behavior.
+Observation:
+The model explains around 43% of the variation in the target variable and serves as a baseline.
 
 ---
 
-## Performance Analysis and Scope for Improvement
-The moderate performance of the model is expected due to the use of a single independent variable. Sales are influenced by multiple factors, including:
-- Product type
-- Category
-- Region
-- Pricing and discounts
-- Seasonal effects
+## Part C – Multiple Linear Regression
+[A](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/multiple_linear_regression.ipynb)
+Multiple input features are used to improve prediction accuracy.
 
-Model performance can be improved by applying Multiple Linear Regression, where additional relevant features are incorporated to explain a greater portion of sales variability.
+Steps performed:
+- Selection of multiple features
+- Train-test split
+- Model training
+- Evaluation using metrics
+- Coefficient interpretation
 
-This highlights the importance of feature selection and model choice in real-world regression problems.
+### Evaluation Results
+- MSE: **1,754,854.76**
+- RMSE: **1,324.71**
+- R² Score: **0.7203**
+- Adjusted R²: **0.7188**
+- Train R²: **0.7572**
+- Test R²: **0.7203**
+
+Observation:
+Multiple features significantly improve prediction performance.
+
+---
+
+## Part D – Polynomial Regression
+[A](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/EDA_Simple_PolynomialRegression.ipynb)
+Polynomial regression captures non-linear relationships.
+
+Steps performed:
+- Polynomial feature transformation
+- Model training
+- Prediction comparison
+- Visualization of polynomial curve
+
+### Evaluation Results
+
+**Linear Regression**
+- MSE: **3,373,973.04**
+- RMSE: **1,836.84**
+- R² Score: **0.4622**
+
+**Polynomial Regression**
+- MSE: **3,372,895.41**
+- RMSE: **1,836.54**
+- R² Score: **0.4624**
+
+Observation:
+Polynomial regression provides only slight improvement in this dataset.
+
+---
+
+## Next Steps in Assignment
+Following parts include:
+
+### Part E – Regularization
+[A](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/ridge_lasso_regression.ipynb)
+- Apply Ridge Regression
+- Apply Lasso Regression
+- Compare coefficients and feature impact
+
+
+### Part F – Model Diagnostics
+- Residual analysis
+- Validation of regression assumptions
+- Model reliability checking
+
+## Observations
+1. Simple regression provides baseline understanding.
+2. Multiple regression significantly improves prediction accuracy.
+3. Polynomial regression helps capture non-linear patterns but improvement depends on data.
+4. Feature selection plays a major role in performance.
+
+---
+
+## Summary of Model Comparison
+
+| Model Type | Complexity | Performance | Use Case |
+|-------------|-----------|------------|-----------|
+| Simple Linear Regression | Low | Moderate | Baseline analysis |
+| Multiple Linear Regression | Medium | High | Practical prediction |
+| Polynomial Regression | Medium | Slight improvement | Non-linear modeling |
+
+Multiple Linear Regression performs best for this dataset.
 
 ---
 
 ## Conclusion
-This project demonstrates the application of Simple Linear Regression to ecommerce sales data. While quantity alone provides useful insights, improved predictive accuracy can be achieved by extending the analysis to multiple regression models. The current model establishes a baseline for further exploration and comparison.
+This assignment demonstrates implementation and comparison of regression models. Model performance improves as more relevant features and appropriate modeling techniques are applied.
+
+Understanding regression behavior and evaluation metrics is essential for real-world machine learning applications.
 
 ---
+
+## Result
+The regression models were successfully implemented, evaluated, and compared. The experiment provides practical knowledge of regression modeling and performance evaluation.
+
+---
+
+---
+
+## Assignment Reference
+This project follows the procedure defined in Assignment-1: Comprehensive Study of Linear Regression Models. :contentReference[oaicite:0]{index=0}
