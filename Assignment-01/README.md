@@ -17,10 +17,10 @@ The objective of this assignment is to implement, analyze, and compare different
 This study focuses on understanding regression techniques, model interpretation, and performance evaluation.
 
 Models implemented:
-1. Simple Linear Regression
-2. Multiple Linear Regression
-3. Polynomial Regression
-4. Regularization Ridge and Lasso
+1. Simple Linear Regression [Link](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/EDA_Simple_PolynomialRegression.ipynb)
+2. Multiple Linear Regression [Link](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/multiple_linear_regression.ipynb)
+3. Polynomial Regression [Link](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/EDA_Simple_PolynomialRegression.ipynb)
+4. Regularization Ridge and Lasso [Link](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/ridge_lasso_regression.ipynb)
 ---
 
 ## Dataset Description
