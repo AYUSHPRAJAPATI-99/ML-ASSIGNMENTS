@@ -24,7 +24,7 @@ Models implemented:
 ---
 
 ## Dataset Description
-[A](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/ecommerce_sales_data.csv)
+[Link](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/ecommerce_sales_data.csv)
 - Dataset used for regression analysis
 - Contains multiple input features
 - Continuous target variable
@@ -46,7 +46,7 @@ The dataset was explored and cleaned before model development.
 ---
 
 ## Methodology
-[A](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/EDA_Simple_PolynomialRegression.ipynb)
+[Link](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/EDA_Simple_PolynomialRegression.ipynb)
 ### Part A – Exploratory Data Analysis (EDA)
 The following steps were performed:
 - Dataset loading and inspection
@@ -61,7 +61,7 @@ EDA helps understand relationships and data quality before modeling.
 ---
 
 ## Part B – Simple Linear Regression
-[A](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/EDA_Simple_PolynomialRegression.ipynb)
+[Link](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/EDA_Simple_PolynomialRegression.ipynb)
 A single independent feature is used to predict the target variable.
 
 Steps performed:
@@ -82,7 +82,7 @@ The model explains around 43% of the variation in the target variable and serves
 ---
 
 ## Part C – Multiple Linear Regression
-[A](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/multiple_linear_regression.ipynb)
+[Link](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/multiple_linear_regression.ipynb)
 Multiple input features are used to improve prediction accuracy.
 
 Steps performed:
@@ -106,7 +106,7 @@ Multiple features significantly improve prediction performance.
 ---
 
 ## Part D – Polynomial Regression
-[A](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/EDA_Simple_PolynomialRegression.ipynb)
+[Link](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/EDA_Simple_PolynomialRegression.ipynb)
 Polynomial regression captures non-linear relationships.
 
 Steps performed:
@@ -116,11 +116,6 @@ Steps performed:
 - Visualization of polynomial curve
 
 ### Evaluation Results
-
-**Linear Regression**
-- MSE: **3,373,973.04**
-- RMSE: **1,836.84**
-- R² Score: **0.4622**
 
 **Polynomial Regression**
 - MSE: **3,372,895.41**
@@ -136,7 +131,7 @@ Polynomial regression provides only slight improvement in this dataset.
 Following parts include:
 
 ### Part E – Regularization
-[A](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/ridge_lasso_regression.ipynb)
+[Link](https://github.com/AYUSHPRAJAPATI-99/ML-ASSIGNMENTS/blob/main/Assignment-01/ridge_lasso_regression.ipynb)
 - Apply Ridge Regression
 - Apply Lasso Regression
 - Compare coefficients and feature impact
